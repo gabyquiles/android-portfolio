@@ -26,7 +26,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:background="#42A5F5"
         android:padding="5dp"
-        android:onClick="callSpotifyApp"/>
+        android:onClick="callApp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:background="#42A5F5"
         android:padding="5dp"
-        android:onClick="callScoresApp" />
+        android:onClick="callApp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:background="#42A5F5"
         android:padding="5dp"
-        android:onClick="callLibraryApp" />
+        android:onClick="callApp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:background="#42A5F5"
         android:padding="5dp"
-        android:onClick="callBuildItBiggerApp" />
+        android:onClick="callApp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:background="#42A5F5"
         android:padding="5dp"
-        android:onClick="callXYZReaderApp" />
+        android:onClick="callApp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -81,5 +81,5 @@
         android:gravity="center_vertical|center_horizontal"
         android:background="#FBC02D"
         android:padding="5dp"
-        android:onClick="callCapstoneApp" />
+        android:onClick="callApp" />
 </LinearLayout>

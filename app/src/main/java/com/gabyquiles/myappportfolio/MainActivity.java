@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
     private Context context;
     private int toast_duration;
+    private Toast appToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,63 +22,37 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /**
-     * Call Spotify App
+     * Call app based on button clicked
      */
-    public void callSpotifyApp(View view) {
-        CharSequence text = "This button will launch my spotify app!";
+    public void callApp(View view) {
+        if(this.appToast != null) {
+            appToast.cancel();
+        }
 
-        Toast toast = Toast.makeText(this.context, text, this.toast_duration);
-        toast.show();
-    }
+        CharSequence text = "An unidentified button has been pressed";
+        switch (view.getId()) {
+            case R.id.spotify_streamer_btn:
+                text = "This button will launch my spotify app!";
+                break;
+            case R.id.scores_btn:
+                text = "This button will launch my Scores app!";
+                break;
+            case R.id.library_btn:
+                text = "This button will launch my Library app!";
+                break;
+            case R.id.buid_it_bigger_btn:
+                text = "This button will launch my Build It Bigger app!";
+                break;
+            case R.id.xyz_reader_btn:
+                text = "This button will launch my XYZ Reader app!";
+                break;
+            case R.id.capstone_btn:
+                text = "This button will launch my capstone app!";
+                break;
+        }
 
-    /**
-     * Call Spotify App
-     */
-    public void callScoresApp(View view) {
-        CharSequence text = "This button will launch my Scores app!";
-
-        Toast toast = Toast.makeText(this.context, text, this.toast_duration);
-        toast.show();
-    }
-
-    /**
-     * Call Spotify App
-     */
-    public void callLibraryApp(View view) {
-        CharSequence text = "This button will launch my Library app!";
-
-        Toast toast = Toast.makeText(this.context, text, this.toast_duration);
-        toast.show();
-    }
-
-    /**
-     * Call Spotify App
-     */
-    public void callBuildItBiggerApp(View view) {
-        CharSequence text = "This button will launch my Build It Bigger app!";
-
-        Toast toast = Toast.makeText(this.context, text, this.toast_duration);
-        toast.show();
-    }
-
-    /**
-     * Call Spotify App
-     */
-    public void callXYZReaderApp(View view) {
-        CharSequence text = "This button will launch my XYZ Reader app!";
-
-        Toast toast = Toast.makeText(this.context, text, this.toast_duration);
-        toast.show();
-    }
-
-    /**
-     * Call Capstone App
-     */
-    public void callCapstoneApp(View view) {
-        CharSequence text = "This button will launch my capstone app!";
-
-        Toast toast = Toast.makeText(this.context, text, this.toast_duration);
-        toast.show();
+        this.appToast = Toast.makeText(this.context, text, this.toast_duration);
+        this.appToast.show();
     }
 
 }
