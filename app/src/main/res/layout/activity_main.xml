@@ -22,69 +22,69 @@
             android:textStyle="bold" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text="@string/spotify_app"
             android:id="@+id/spotify_streamer_btn"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="@dimen/margin_text_buttons"
             android:gravity="center_vertical|center_horizontal"
             android:background="@color/blue_btns"
-            android:padding="5dp"
+            android:padding="@dimen/button_paddding"
             android:onClick="callApp"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text="@string/scores_app"
             android:id="@+id/scores_btn"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/button_margin_top"
             android:gravity="center_vertical|center_horizontal"
             android:background="@color/blue_btns"
-            android:padding="5dp"
+            android:padding="@dimen/button_paddding"
             android:onClick="callApp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text="@string/library_app"
             android:id="@+id/library_btn"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/button_margin_top"
             android:gravity="center_vertical|center_horizontal"
             android:background="@color/blue_btns"
-            android:padding="5dp"
+            android:padding="@dimen/button_paddding"
             android:onClick="callApp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text="@string/build_it_bigger_app"
             android:id="@+id/buid_it_bigger_btn"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/button_margin_top"
             android:gravity="center_vertical|center_horizontal"
             android:background="@color/blue_btns"
-            android:padding="5dp"
+            android:padding="@dimen/button_paddding"
             android:onClick="callApp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text="@string/xyz_reader_app"
             android:id="@+id/xyz_reader_btn"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/button_margin_top"
             android:gravity="center_vertical|center_horizontal"
             android:background="@color/blue_btns"
-            android:padding="5dp"
+            android:padding="@dimen/button_paddding"
             android:onClick="callApp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text="@string/capstone_app"
             android:id="@+id/capstone_btn"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/button_margin_top"
             android:gravity="center_vertical|center_horizontal"
             android:background="@color/orange_capstone"
-            android:padding="5dp"
+            android:padding="@dimen/button_paddding"
             android:onClick="callApp" />
     </LinearLayout>
 </ScrollView>
